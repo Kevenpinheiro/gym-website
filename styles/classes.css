@@ -1,0 +1,95 @@
+.classes {
+  width: 100%;
+  height: auto;
+  padding: 28px 2%;
+
+  background-color: #151515;
+}
+
+.classes h4 {
+  color: #facc22;
+
+  text-align: center;
+}
+
+.classes h2 {
+  text-align: center;
+
+  padding: 15px;
+  font-size: 30px;
+
+  color: #fff;
+}
+
+.classes h2 span {
+  color: #facc22;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.classes .C_box {
+  width: 100%;
+  height: auto;
+  padding: 25px 2%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.classes .C_box .C_card {
+  width: 450px;
+  height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+.classes .C_box .C_card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+.classes .C_box .C_card:hover img {
+  opacity: 1;
+}
+
+.classes .C_box .C_card .details_box {
+  width: 450px;
+  height: 40px;
+
+  position: relative;
+
+  clip-path: polygon(0% 0%, 100% 0%, 95% 100% 0% 100%);
+
+  bottom: 55px;
+  transition: 0.4s;
+}
+
+.classes .C_box .C_card:hover .details_box {
+  background-color: #facc22;
+  opacity: 0.8;
+}
+
+.classes .C_box .C_card .details_box h2 {
+  font-size: 23px;
+  font-style: italic;
+  color: #fff;
+
+  padding-top: 7px;
+
+  transition: 0.5s;
+}
+
+.classes .C_box .C_card:hover .details_box h2 {
+  color: #000;
+}

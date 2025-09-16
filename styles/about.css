@@ -1,0 +1,61 @@
+.about {
+  width: 100%;
+  height: auto;
+  padding: 28px 2%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #151515;
+}
+
+.about .A_right img {
+  width: 480px;
+}
+
+.about .A_left h4 {
+  margin-bottom: 15px;
+
+  color: #facc22;
+}
+
+.about .A_left h2 {
+  color: #fff;
+
+  font-size: 35px;
+  width: 600px;
+  line-height: 46px;
+}
+
+.about .A_left p.details {
+  color: #d2d2d2;
+
+  width: 600px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  font-style: italic;
+  line-height: 24px;
+}
+
+.about .A_left p.services {
+  font-style: normal;
+
+  color: #fff;
+  line-height: 45px;
+
+  cursor: pointer;
+}
+
+.about .A_left p.services:hover {
+  color: #facc22;
+
+  transition: 1s;
+}
+
+.about .A_left p.services i {
+  color: #facc22;
+
+  margin-right: 12px;
+}

@@ -1,0 +1,97 @@
+.plan {
+  width: 100%;
+  height: auto;
+  padding: 0 2% 28px 2%;
+
+  background-color: #151515;
+}
+
+.plan h2 {
+  color: #fff;
+
+  margin-top: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.plan h2 span {
+  color: #facc22;
+
+  margin-left: 10px;
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+.plan h2 span:hover {
+  opacity: 0.8;
+}
+
+.plan .p_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.plan .p_box .p_card {
+  width: 400px;
+  height: auto;
+  padding: 20px;
+}
+
+.plan .p_box .p_card h4 {
+  text-align: center;
+  font-style: italic;
+  color: #fff;
+
+  margin-bottom: 10px;
+}
+
+.plan .p_box .p_card h1 {
+  text-align: center;
+  font-size: 45px;
+  font-family: 'bahamas';
+
+  color: #facc22;
+
+  margin-bottom: 10px;
+}
+
+.plan .p_box .p_card .plans {
+  text-align: center;
+  line-height: 45px;
+
+  color: #d2d2d2;
+
+  margin-bottom: 10px;
+}
+
+.plan .p_box .p_card a {
+  width: 200px;
+  padding: 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  text-decoration: none;
+  color: #fff;
+
+  border: 1px solid #facc22;
+  border-radius: 2px;
+
+  transition: 0.8s;
+}
+
+.plan .p_box .p_card a:hover {
+  background-color: #facc22;
+  color: #000;
+}
+
+.plan h4 {
+  color: #facc22;
+  text-align: center;
+}
+
