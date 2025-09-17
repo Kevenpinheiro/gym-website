@@ -1,0 +1,30 @@
+.gallery {
+  width: 100%;
+  height: auto;
+  padding: 20px 2%;
+
+  background-color: #151515;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.gallery .image {
+  width: 480px;
+  height: 340px;
+  overflow: hidden;
+
+  border-radius: 9px;
+}
+
+.gallery .image img {
+  width: 480px;
+  height: 340px;
+
+  transition: 0.4s;
+}
+
+.gallery .image img:hover {
+  transform: scale(1.1);
+}
