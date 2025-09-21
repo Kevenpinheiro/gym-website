@@ -1,0 +1,155 @@
+footer {
+  width: 100%;
+  height: auto;
+  padding: 28px 2%;
+
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #151515;
+}
+
+footer .socialmedia .f_logo h1 {
+  color: #fff;
+
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+footer .socialmedia .f_logo h1 span {
+  font-size: 18px;
+  margin-left: 5px;
+
+  color: #facc22;
+}
+
+footer .socialmedia .f_tag p {
+  color: #d2d2d2;
+  font-style: italic;
+
+  width: 450px;
+  line-height: 24px;
+}
+
+footer .socialmedia .f_tag .f_icon {
+  display: flex;
+  margin-top: 10px;
+}
+
+footer .socialmedia .f_tag .f_icon .back {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+
+  background-color: #facc22;
+
+  border-radius: 50%;
+}
+
+footer .back i { 
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+footer .mid {
+  width: 500px;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .mid .f_left h2 {
+  margin-bottom: 15px;
+
+  color: #fff;
+}
+
+footer .mid .f_left p {
+  color: #d2d2d2;
+
+  line-height: 30px;
+
+  transition: 0.4s;
+}
+
+footer .mid .f_left p:hover {
+  color: #facc22;
+}
+
+footer .mid .f_left p i {
+  margin-right: 9px;
+
+  font-size: 10px;
+}
+
+footer .mid .f_right h2 {
+  color: #fff;
+
+  margin-bottom: 15px;
+}
+
+footer .mid .f_right p {
+  color: #d2d2d2;
+  font: italic;
+
+  line-height: 30px;
+
+  transition: 0.4s;
+}
+
+footer .mid .f_right p i {
+  margin-right: 9px;
+  color: #facc22;
+
+  font-size: 10px;
+}
+
+footer .search h2 {
+  margin-bottom: 15px;
+
+  color: #fff;
+}
+
+footer .search input {
+  width: 230px;
+  padding: 8px 7px;
+
+  border: 1px solid #facc22;
+
+  background: #facb2210;
+  color: #d2d2d2;
+
+  outline: none;
+  font-style: italic;
+
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+footer .search label {
+  color: #facc22;
+  margin-left: 6px;
+
+  cursor: pointer;
+}
+
+.end {
+  text-align: center;
+  font-style: italic;
+
+  color: #d2d2d2;
+  background: #151515;
+
+  padding-bottom: 20px;
+}
+
+.end i {
+  margin: 0 8px;
+}
+
+.end span {
+  color: #facc22;
+}
