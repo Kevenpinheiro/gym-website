@@ -27,8 +27,12 @@ footer .socialmedia .f_tag p {
   color: #d2d2d2;
   font-style: italic;
 
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   line-height: 24px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 footer .socialmedia .f_tag .f_icon {
@@ -152,4 +156,163 @@ footer .search label {
 
 .end span {
   color: #facc22;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  footer {
+    width: 100vw;
+    min-width: 100vw;
+    padding: 40px 4%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .socialmedia {
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 30px;
+
+  }
+  
+  .mid {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .search {
+    margin-top: 30px;
+  }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100vw;
+    min-width: 100vw;
+    padding: 30px 4%;
+
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .f_logo h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .f_tag p {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .f_left h2, .f_right h2 {
+    font-size: 18px;
+  }
+  
+  .f_left p, .f_right p {
+    font-size: 14px;
+  }
+  
+  .search h2 {
+    font-size: 18px;
+  }
+  
+  .search input {
+    width: 200px;
+    padding: 8px;
+  }
+}
+
+/* Mobile (320px - 480px) */
+@media screen and (max-width: 480px) {
+  footer {
+    width: 100vw;
+    min-width: 100vw;
+    padding: 20px 4%;
+
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .f_logo h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .f_tag p {
+    font-size: 13px;
+    text-align: left;
+    overflow-wrap: break-word;
+
+  }
+  
+  .f_icon {
+    gap: 15px;
+  }
+  
+  .back {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .f_left h2, .f_right h2 {
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .f_left p, .f_right p {
+    font-size: 13px;
+  }
+  
+  .search h2 {
+    font-size: 16px;
+  }
+  
+  .search input {
+    width: 180px;
+    padding: 7px;
+    font-size: 13px;
+  }
+  
+  .end {
+    font-size: 13px;
+
+  }
+}
+
+/* Mobile muito pequeno (até 320px) */
+@media screen and (max-width: 320px) {
+  .f_logo h1 {
+    font-size: 18px;
+  }
+  
+  .f_tag p {
+    font-size: 12px;
+  }
+  
+  .f_left h2, .f_right h2 {
+    font-size: 14px;
+  }
+  
+  .f_left p, .f_right p {
+    font-size: 12px;
+  }
+  
+  .search h2 {
+    font-size: 14px;
+  }
+  
+  .search input {
+    width: 160px;
+    font-size: 12px;
+  }
+  
+  .end {
+    font-size: 12px;
+  }
 }

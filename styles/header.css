@@ -1,13 +1,7 @@
-* {
-  margin: 0; 
-  padding: 0;
-  box-sizing: border-box; 
-
-  font-family: sans-serif; 
-}
 
 header {
   width: 100%;
+  min-width: 100vw;
   height: 100vh;
 
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.3)),url(../src/img/Bg.jpg);
@@ -79,6 +73,8 @@ header p.texts {
 
   text-align: justify;
   font-style: italic;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 header button {
@@ -103,3 +99,142 @@ header button:hover {
 
   transition: 1s;
 }
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100vw;
+    min-width: 100vw;
+  }
+  
+  header h1.tag {
+    width: 500px;
+    font-size: 50px;
+  }
+  
+  header p.texts {
+    width: 450px;
+    text-align: left;
+  }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+    min-width: 100vw;
+  }
+  
+  header .nav {
+    padding: 0 4%;
+  }
+  
+  header .nav ul li {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  header h1.tag {
+    width: 400px;
+    margin-top: 80px;
+
+    font-size: 40px;
+  }
+  
+  header p.texts {
+    width: 350px;
+    font-size: 14px;
+
+    text-align: left;
+  }
+  
+  header button {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (320px - 480px) */
+@media screen and (max-width: 480px) {
+  header {
+    width: 100vw;
+    min-width: 100vw;
+
+  }
+  
+  header .nav {
+    flex-direction: column;
+    padding: 15px 4%;
+
+    height: auto;
+  }
+  
+  header .nav .logo h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  header .nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  header .nav ul li {
+    margin: 0 5px;
+    font-size: 12px;
+  }
+  
+  header h1.tag {
+    font-size: 28px;
+
+    width: 90%;
+    margin: 60px auto 0;
+    text-align: left;
+  }
+  
+  header p.texts {
+    width: 90%;
+
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 13px;
+
+    text-align: left;
+  }
+  
+  header button {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto 0;
+    
+    font-size: 14px;
+
+  }
+}
+
+/* Mobile muito pequeno (até 320px) */
+@media screen and (max-width: 320px) {
+  header {
+    width: 100vw;
+    min-width: 100vw;
+  }
+  
+  header h1.tag {
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  header p.texts {
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  header .nav ul li {
+    font-size: 11px;
+  }
+}
+
